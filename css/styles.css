@@ -1092,6 +1092,14 @@ address {
   background: #fcfcfc;
 }
 
+@media screen and (max-width: 478px) {
+  .modal {
+    max-width: 80%;
+    padding-top: 38px;
+    overflow-y: auto;
+  }
+}
+
 .backdrop.is-hidden > .modal {
   transform: translate(-50%, -200%);
 }
@@ -1120,6 +1128,13 @@ address {
   outline: transparent;
 
   transition: transform 250ms var(--cubic);
+}
+
+@media screen and (max-width: 478px) {
+  .modal-btn {
+    top: 8px;
+    right: 8px;
+  }
 }
 
 .modal-btn:hover,
@@ -1164,7 +1179,7 @@ address {
 }
 
 .modal-inp {
-  width: 360px;
+  width: 100%;
   height: 40px;
   padding-left: 38px;
 
@@ -1272,7 +1287,7 @@ address {
 .textarea > .modal-text-inp {
   resize: none;
 
-  width: 360px;
+  width: 100%;
   height: 120px;
   padding: 8px 16px;
 
@@ -1319,6 +1334,12 @@ address {
   color: #8e8f99;
 }
 
+@media screen and (max-width: 478px) {
+  .check-text {
+    flex-direction: column;
+  }
+}
+
 .check-text::before {
   content: '';
   width: 36px;
@@ -1330,6 +1351,12 @@ address {
   cursor: pointer;
 
   transition: border 300ms linear, background-color 300ms linear;
+}
+
+@media screen and (max-width: 478px) {
+  .check-text::before {
+    margin-right: auto;
+  }
 }
 
 .check-text::after {
