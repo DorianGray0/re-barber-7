@@ -379,30 +379,17 @@ address {
 }
 
 .hero-wrap {
-  /* flex-grow: 1; */
-  /* padding: 272px 100px 208px 100px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* 
-  background-color: #504d4d;
-  background-image: var(--bg-linear-gradient), url(../images/hero-bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
 }
 
 .hero-upper-text {
-  /* margin-bottom: 20px; */
-
   letter-spacing: 0.1em;
   color: rgba(157, 164, 189, 0.6);
 }
 
 .hero-title {
-  /* margin-bottom: 20px; */
-
-  /* font-size: 72px; */
   font-size: 48px;
 }
 
