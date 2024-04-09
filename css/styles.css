@@ -199,8 +199,6 @@ address {
 
 .navigation-link,
 .header-tel {
-  transform: scale(1);
-
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -318,6 +316,12 @@ address {
 .mob-menu-list .navigation-link {
   font-size: 18px;
   color: #303030;
+}
+
+.navigation-item:hover .navigation-link,
+.navigation-item:focus .navigation-link {
+  color: var(--accent-color);
+  transform: scale(1.1);
 }
 
 .info-wrap {
