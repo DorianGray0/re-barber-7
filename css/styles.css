@@ -7,7 +7,7 @@
   --accent-color: #ff6c00;
   --secondary-bgc: #f7f7f7;
   --form-label-color: #8e8f99;
-  --gap-regular: 2.6vw; /* 30px */
+  --gap-regular: 30px; /* 2.6vw */
   --bg-linear-gradient: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
   --cubic: cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
@@ -155,9 +155,10 @@ address {
 .header > .container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .header > .container {
     align-items: flex-start;
   }
@@ -175,6 +176,7 @@ address {
 }
 
 .header-logo {
+  height: 56px;
   transform: scale(1);
 
   outline: transparent;
@@ -505,8 +507,13 @@ address {
 }
 
 .hero-upper-text {
-  letter-spacing: 0.1em;
   color: rgba(157, 164, 189, 0.6);
+}
+
+@media screen and (max-width: 767px) {
+  .hero-upper-text {
+    letter-spacing: 0.1em;
+  }
 }
 
 .hero-title {
@@ -580,6 +587,7 @@ address {
   .hero-wrap {
     padding-left: 100px;
     min-height: 680px;
+    padding-top: 272px;
 
     background-image: var(--bg-linear-gradient), url(../images/hero-bg.jpg);
   }
