@@ -206,17 +206,10 @@ address {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: var(--interact-color);
+  display: block;
 
   transition: color 250ms var(--cubic), transform 250ms var(--cubic);
   outline: transparent;
-}
-
-.navigation-link:hover,
-.navigation-link:focus,
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-  transform: scale(1.1);
 }
 
 .mob-menu {
@@ -320,12 +313,6 @@ address {
   color: #303030;
 }
 
-.navigation-item:hover .navigation-link,
-.navigation-item:focus .navigation-link {
-  color: var(--accent-color);
-  transform: scale(1.1);
-}
-
 .info-wrap {
 }
 
@@ -345,6 +332,14 @@ address {
 .mob-menu-wrap > .header-button {
   color: #303030;
   width: 194px;
+}
+
+.navigation-link:hover,
+.navigation-link:focus,
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+  transform: scale(1.1);
 }
 
 .mob-menu-nav .hero-link {
