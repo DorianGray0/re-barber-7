@@ -990,30 +990,80 @@ address {
 /* ------------------------benefits */
 
 .benefits {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .benefits {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .benefits > .container {
   display: flex;
-  gap: 130px;
+  flex-direction: column-reverse;
+  gap: 44px;
+}
 
-  padding-left: 85px;
-  padding-right: 115px;
+@media screen and (min-width: 1170px) {
+  .benefits > .container {
+    flex-direction: row;
+    gap: 130px;
+
+    padding-left: 85px;
+    padding-right: 115px;
+  }
 }
 
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  width: 370px;
+  align-self: flex-end;
+
+  max-width: 416px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .benefits-list {
+    max-width: 370px;
+  }
 }
 
 .benefits-item {
-  width: 170px;
+  width: 193px;
   height: 133px;
-  padding: 20px 24px;
+  padding: 20px 35px;
 
   background-color: var(--secondary-bgc);
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-item {
+    width: 210px;
+    padding: 20px 44px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .benefits-item {
+    width: 170px;
+    padding: 20px 24px;
+  }
 }
 
 .benefits-item:nth-child(odd) {
@@ -1022,6 +1072,12 @@ address {
 
 .benefits-item:nth-child(even) {
   margin-top: 30px;
+}
+
+@media screen and (max-width: 478px) {
+  .benefits-item:nth-child(3) {
+    margin-top: 30px;
+  }
 }
 
 .benefits-item > .count {
@@ -1041,13 +1097,19 @@ address {
   content: '+';
   position: absolute;
   top: 7px;
-  margin-left: 1px;
+  margin-left: 2px;
 
   font-weight: 600;
   font-size: 16px;
   line-height: calc(22 / 16);
   text-align: center;
   color: #ff6c00;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-item > .count::after {
+    margin-left: 1px;
+  }
 }
 
 .benefits-item-text {
@@ -1071,6 +1133,8 @@ address {
 .benefits-title {
   max-width: 431px;
   margin-bottom: 20px;
+
+  font-size: 41px;
 
   color: var(--second-title-color);
 }
