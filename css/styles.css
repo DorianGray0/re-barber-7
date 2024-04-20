@@ -1146,10 +1146,24 @@ address {
 /* ---------------------------barbers */
 
 .team {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
 
   background-color: var(--secondary-bgc);
+}
+
+@media screen and (min-width: 1170px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1169px) {
+  .team > .container {
+    padding-left: 159px;
+    padding-right: 159px;
+  }
 }
 
 .team-upper-text {
@@ -1164,13 +1178,41 @@ address {
   color: var(--second-title-color);
 }
 
+@media screen and (max-width: 479px) {
+  .team-title {
+    font-size: 8.75vw;
+  }
+}
+
 .team-list {
   display: flex;
-  gap: var(--gap-regular);
+  flex-direction: column;
+  align-items: center;
+  /* gap: var(--gap-regular); */
+  gap: 64px;
+}
+
+@media screen and (min-width: 1170px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--gap-regular);
+  }
 }
 
 .team-item {
-  flex-basis: calc((100% - 2 * var(--gap-regular)) / 3);
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 1170px) {
+  .team-item {
+    flex-basis: calc((100% - 2 * var(--gap-regular)) / 3);
+  }
+}
+
+.team-item-picture {
+  margin-bottom: 30px;
 }
 
 .team-item-title {
