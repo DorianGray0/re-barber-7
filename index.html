@@ -137,14 +137,48 @@
       </section>
 
       <!-- SECTION 2 ABOUT -->
-      <!-- <section class="about">
+      <section class="about">
         <div class="container">
           <ul class="about-list">
             <li class="about-item">
-              <img src="./images/img-about-1.webp" alt="beard" width="270" height="445" />
+              <picture>
+                <source
+                  srcset="./images/img-about-1.webp 1x, ./images/img-about-2@2x.webp 2x"
+                  media="(min-width: 1170px)"
+                />
+                <source
+                  srcset="./images/img-about-1-tab@1x.webp 1x, ./images/img-about-1-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="about-item-picture"
+                  loading="lazy"
+                  src="./images/img-about-1-tab@1x.webp"
+                  alt="beard"
+                  width="330"
+                  height="235"
+                />
+              </picture>
             </li>
             <li class="about-item">
-              <img src="./images/img-about-2.webp" alt="hair" width="270" height="445" />
+              <picture>
+                <source
+                  srcset="./images/img-about-2.webp 1x, ./images/img-about-2@2x.webp 2x"
+                  media="(min-width: 1170px)"
+                />
+                <source
+                  srcset="./images/img-about-2-tab@1x.webp 1x, ./images/img-about-2-tab@2x.webp 2x"
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="about-item-picture"
+                  loading="lazy"
+                  src="./images/img-about-2-tab@1x.webp"
+                  alt="beard"
+                  width="330"
+                  height="235"
+                />
+              </picture>
             </li>
           </ul>
 
@@ -164,7 +198,7 @@
             <button class="about-button btn" type="button">ONLINE-BOOKING</button>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- SECTION 3 services and prices  -->
       <!-- <section class="services">
