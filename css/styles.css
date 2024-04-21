@@ -1534,6 +1534,10 @@ address {
   transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
 }
 
+.mob-backdropp {
+  z-index: 999;
+}
+
 .backdrop.is-hidden {
   transition: opacity 250ms var(--cubic) 450ms, visibility 250ms var(--cubic) 450ms;
 }

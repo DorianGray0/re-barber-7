@@ -61,15 +61,27 @@
    */
 
   let mobmenu = document.querySelector('.mob-menu');
+  let openmodal = document.querySelector('.open-modal');
   let backdropmobmenu = document.querySelector('.backdrop-mob-menu ');
+  let mobbackdropp = document.querySelector('.mob-backdropp ');
   let closemobmenu = document.querySelector('.close-mob-menu');
+  let closemobmodal = document.querySelector('.close-mob-modal');
 
   mobmenu.addEventListener('click', () => {
     backdropmobmenu.classList.add('is-open');
   });
 
+  openmodal.addEventListener('click', () => {
+    mobbackdropp.classList.remove('is-hidden');
+  });
+
   closemobmenu.addEventListener('click', e => {
     e.preventDefault();
     backdropmobmenu.classList.remove('is-open');
+  });
+
+  closemobmodal.addEventListener('click', e => {
+    e.preventDefault();
+    mobbackdropp.classList.add('is-hidden');
   });
 })();
