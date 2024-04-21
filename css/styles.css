@@ -65,9 +65,9 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 1170px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -102,13 +102,13 @@ address {
   background-color: currentColor;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1169px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .upper-text::before {
     width: 63px;
   }
 }
 
-@media screen and (min-width: 1169px) {
+@media screen and (min-width: 1199px) {
   .upper-text::before {
     width: 60px;
   }
@@ -180,7 +180,7 @@ address {
   align-items: center;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1169px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .header > .container {
     align-items: flex-start;
   }
@@ -191,7 +191,7 @@ address {
   align-items: center;
 }
 
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
   .header-navigation {
     padding-left: 10px;
   }
@@ -250,7 +250,7 @@ address {
   display: none;
 }
 
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
   .info-wrap {
     padding-top: 10px;
   }
@@ -441,7 +441,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1169px) {
+@media screen and (min-width: 1199px) {
   .header-navigation {
     gap: 130px;
   }
@@ -595,7 +595,7 @@ address {
     justify-content: center;
 
     width: 1070px;
-    min-height: 100vh;
+    min-height: 100%;
     padding: 208px 0;
     padding-top: 242px;
     padding-left: 98px;
@@ -620,7 +620,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .hero-soc {
     max-width: 100px;
   }
@@ -658,7 +658,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .about {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -683,13 +683,13 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .about-list {
     flex-direction: row;
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .about-item {
     flex-basis: calc((100% - 1 * var(--gap-regular)) / 2);
   }
@@ -700,7 +700,7 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1169px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .about > .container {
     justify-content: center;
   }
@@ -710,7 +710,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1169px) {
+@media screen and (min-width: 1199px) {
   .about-wrap {
     max-width: 470px;
   }
@@ -736,7 +736,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .about-title {
     max-width: 470px;
     font-size: 42px;
@@ -758,7 +758,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .about-down-text {
     font-size: 18px;
   }
@@ -779,7 +779,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .about-text {
     margin-bottom: 42px;
   }
@@ -848,7 +848,7 @@ address {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1169px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .services > .container {
     padding-right: 29px;
   }
@@ -860,7 +860,7 @@ address {
   color: rgba(157, 164, 189, 0.6);
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .services-upper-text {
     margin-bottom: 9px;
   }
@@ -879,7 +879,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .services-title {
     margin-bottom: 55px;
   }
@@ -893,7 +893,7 @@ address {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .services-wrap {
     flex-direction: row;
     flex-wrap: wrap;
@@ -912,14 +912,14 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .services-list {
     padding: 30px 21px;
     flex-basis: calc((100% - 1 * var(--gap-regular)) / 2);
   }
 }
 
-@media screen and (max-width: 1169px) {
+@media screen and (max-width: 1199px) {
   .services-list:first-of-type {
     padding-bottom: 20px;
   }
@@ -929,7 +929,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .services-list:first-child {
     background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   }
@@ -1001,7 +1001,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -1014,7 +1014,7 @@ address {
   gap: 44px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits > .container {
     flex-direction: row;
     gap: 130px;
@@ -1038,7 +1038,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-list {
     max-width: 370px;
   }
@@ -1059,7 +1059,7 @@ address {
   }
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .benefits-item {
     width: 170px;
     padding: 20px 24px;
@@ -1152,14 +1152,14 @@ address {
   background-color: var(--secondary-bgc);
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .team {
     padding-top: 120px;
     padding-bottom: 120px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1169px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team > .container {
     padding-left: 159px;
     padding-right: 159px;
@@ -1192,7 +1192,7 @@ address {
   gap: 64px;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .team-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1205,7 +1205,7 @@ address {
   flex-basis: 100%;
 }
 
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 1200px) {
   .team-item {
     flex-basis: calc((100% - 2 * var(--gap-regular)) / 3);
   }
