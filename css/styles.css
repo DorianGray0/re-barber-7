@@ -21,6 +21,10 @@ body {
   overflow-x: hidden;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 p,
 h1,
 h2,
@@ -426,7 +430,7 @@ address {
 
   .navigation-list {
     display: flex;
-    gap: 2.6vw;
+    gap: 20px;
   }
 
   .mob-menu {
@@ -1531,7 +1535,7 @@ address {
 }
 
 .backdrop.is-hidden {
-  transition: opacity 250ms var(--cubic) 350ms, visibility 250ms var(--cubic) 350ms;
+  transition: opacity 250ms var(--cubic) 450ms, visibility 250ms var(--cubic) 450ms;
 }
 
 .backdrop.is-hidden {
@@ -1546,7 +1550,7 @@ address {
   left: 50%;
 
   transform: translate(-50%, -50%);
-  transition: transform 350ms var(--cubic);
+  transition: transform 450ms var(--cubic);
 
   width: 408px;
   min-height: 500px;
