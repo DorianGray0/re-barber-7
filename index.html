@@ -462,70 +462,140 @@
       </section>
 
       <!-- SECTION 6 portfolio -->
-      <!-- <section class="portfilio">
+      <section class="portfilio">
         <div class="container">
           <h2 class="visually-hidden">portfilio of haircut</h2>
           <p class="portfilio-text upper-text">In Latin, "barba" means "beard"</p>
           <ul class="portfilio-list">
-            <li
-              class="portfilio-item"
-             
-             
-            >
-              >
-              <img
-                src="./images/img-portfolio-1.webp"
-                alt="barbers haircut"
-                width="270"
-                height="360"
-              />
+            <li class="portfilio-item">
+              <picture>
+                <source
+                  srcset="./images/img-portfolio-1@1x.webp 1x, ./images/img-portfolio-1@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-portfolio-1-tab@1x.webp 1x,
+                    ./images/img-portfolio-1-tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-portfolio-1-mob@1x.webp 1x,
+                    ./images/img-portfolio-1-mob@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="portfolio-item-picture"
+                  src="./images/img-portfolio-1-mob@1x.webp"
+                  alt="barbers haircut"
+                  width="418"
+                  height="360"
+                />
+              </picture>
             </li>
-            <li
-              class="portfilio-item"
-             
-            >
-              >
-              <img
-                src="./images/img-portfolio-2.webp"
-                alt="barbers haircut"
-                width="270"
-                height="360"
-              />
+            <li class="portfilio-item">
+              <picture>
+                <source
+                  srcset="./images/img-portfolio-2@1x.webp 1x, ./images/img-portfolio-2@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-portfolio-2-tab@1x.webp 1x,
+                    ./images/img-portfolio-2-tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-portfolio-2-mob@1x.webp 1x,
+                    ./images/img-portfolio-2-mob@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="portfolio-item-picture"
+                  src="./images/img-portfolio-2-mob@1x.webp"
+                  alt="barbers haircut"
+                  width="418"
+                  height="360"
+                />
+              </picture>
             </li>
-            <li
-              class="portfilio-item"
-           
-             
-            >
-              >
-              <img
-                src="./images/img-portfolio-3.webp"
-                alt="barbers haircut"
-                width="270"
-                height="360"
-              />
+            <li class="portfilio-item">
+              <picture>
+                <source
+                  srcset="./images/img-portfolio-3@1x.webp 1x, ./images/img-portfolio-3@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-portfolio-3-tab@1x.webp 1x,
+                    ./images/img-portfolio-3-tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-portfolio-3-mob@1x.webp 1x,
+                    ./images/img-portfolio-3-mob@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="portfolio-item-picture"
+                  src="./images/img-portfolio-3-mob@1x.webp"
+                  alt="barbers haircut"
+                  width="418"
+                  height="360"
+                />
+              </picture>
             </li>
-            <li
-              class="portfilio-item"
-            
-            >
-              >
-              <img
-                src="./images/img-portfolio-4.webp"
-                alt="barbers haircut"
-                width="270"
-                height="360"
-              />
+            <li class="portfilio-item">
+              <picture>
+                <source
+                  srcset="./images/img-portfolio-4@1x.webp 1x, ./images/img-portfolio-4@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-portfolio-4-tab@1x.webp 1x,
+                    ./images/img-portfolio-4-tab@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/img-portfolio-4-mob@1x.webp 1x,
+                    ./images/img-portfolio-4-mob@2x.webp 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+
+                <img
+                  class="portfolio-item-picture"
+                  src="./images/img-portfolio-4-mob@1x.webp"
+                  alt="barbers haircut"
+                  width="418"
+                  height="360"
+                />
+              </picture>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <div class="contacts-wrap">
         <div class="container">
           <!-- SECTION 7 online booking -->
-          <!-- <section class="booking">
-            <h2 class="booking-title title" data-aos="zoom-out">Online-booking</h2>
+          <section class="booking">
+            <h2 class="booking-title title">Online-booking</h2>
             <form class="booking-form" autocomplete="off">
               <div class="booking-inp-wrap">
                 <div class="booking-field">
@@ -543,7 +613,7 @@
                 </div>
               </div>
 
-              <div class="booking-field">
+              <div class="booking-field last-bf">
                 <label class="booking-label">
                   <span class="booking-text">Message</span>
                   <textarea name="comment" class="booking-inp booking-textarea"></textarea>
@@ -552,48 +622,51 @@
 
               <button class="header-button btn booking-btn" type="submit">send</button>
             </form>
-          </section> -->
+          </section>
 
           <!-- SECTION 8 Contacts -->
-          <!-- <section class="contacts">
-            <h2 class="contacts-title title" data-aos="zoom-out">Contacts</h2>
-            <address class="address">
-              <ul class="address-list">
-                <li class="address-item">
-                  <a
-                    class="address-link down-text link"
-                    href="https://maps.app.goo.gl/wKZDcToJrYftCHqq6"
-                    target="_blank"
-                    rel="nofollow noopener noreferrer"
-                    ><svg class="address-icon own" width="24" height="24">
-                      <use href="./images/icon.svg#icon-map-pin"></use>
-                    </svg>
-                    st. Vasilkivska, 7A <br />
-                    Kyiv, 08132</a
-                  >
-                </li>
-                <li class="address-item">
-                  <a class="address-link down-text link" href="tel:+380441111111"
-                    ><svg class="address-icon" width="24" height="24">
-                      <use href="./images/icon.svg#icon-phone"></use>
-                    </svg>
-                    +38 044 111 11 11</a
-                  >
-                </li>
-                <li class="address-item">
-                  <a class="address-link down-text link" href="mailto:barbershop@email.com"
-                    ><svg class="address-icon" width="24" height="24">
-                      <use href="./images/icon.svg#icon-mail"></use>
-                    </svg>
-                    barbershop@email.com</a
-                  >
-                </li>
-              </ul>
-            </address>
-
-            <p class="contacts-upper-text upper-text">Working hours</p>
-            <p class="contacts-text down-text">Every day from 9:00 to 22:00</p>
-          </section> -->
+          <section class="contacts">
+            <h2 class="contacts-title title">Contacts</h2>
+            <div class="contacts-wrap-details">
+              <address class="address">
+                <ul class="address-list">
+                  <li class="address-item">
+                    <a
+                      class="address-link down-text link"
+                      href="https://maps.app.goo.gl/wKZDcToJrYftCHqq6"
+                      target="_blank"
+                      rel="nofollow noopener noreferrer"
+                      ><svg class="address-icon own" width="24" height="24">
+                        <use href="./images/icon.svg#icon-map-pin"></use>
+                      </svg>
+                      st. Vasilkivska, 7A <br />
+                      Kyiv, 08132</a
+                    >
+                  </li>
+                  <li class="address-item">
+                    <a class="address-link down-text link" href="tel:+380441111111"
+                      ><svg class="address-icon" width="24" height="24">
+                        <use href="./images/icon.svg#icon-phone"></use>
+                      </svg>
+                      +38 044 111 11 11</a
+                    >
+                  </li>
+                  <li class="address-item">
+                    <a class="address-link down-text link" href="mailto:barbershop@email.com"
+                      ><svg class="address-icon" width="24" height="24">
+                        <use href="./images/icon.svg#icon-mail"></use>
+                      </svg>
+                      barbershop@email.com</a
+                    >
+                  </li>
+                </ul>
+              </address>
+              <div class="contacts-wrapper-info">
+                <p class="contacts-upper-text upper-text">Working hours</p>
+                <p class="contacts-text down-text">Every day from 9:00 to 22:00</p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>

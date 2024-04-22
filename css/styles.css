@@ -1270,25 +1270,68 @@ address {
 /* ---------------------------portfolio */
 
 .portfilio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfilio {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .portfilio > .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfilio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfilio > .container {
+    max-width: 1200px;
+  }
 }
 
 .portfilio-text {
-  margin-bottom: 44px;
+  margin-bottom: 71px;
 
   color: var(--second-title-color);
+}
+
+@media screen and (min-width: 768px) {
+  .portfilio-text {
+    margin-bottom: 44px;
+  }
 }
 
 .portfilio-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: var(--gap-regular);
-  row-gap: 50px;
+  justify-content: center;
+  gap: var(--gap-regular);
 }
 
-.portfilio-item {
-  flex-basis: calc((100% - 3 * var(--gap-regular)) / 4);
+@media screen and (min-width: 1200px) {
+  .portfilio-list {
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfilio-item {
+    flex-basis: calc((100% - 1 * var(--gap-regular)) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfilio-item {
+    flex-basis: calc((100% - 3 * var(--gap-regular)) / 4);
+  }
 }
 
 /* -------CONTACTS WRAP  */
@@ -1299,29 +1342,93 @@ address {
 
   background-color: #191c26;
 
-  background-image: url(../images/contacts-bg.webp);
+  background-image: url(../images/contacts-bg-mob@1x.webp);
   background-repeat: no-repeat;
-  background-position: right;
-  background-size: calc(50% - 15px) 100%;
+
+  background-position: bottom;
+  background-size: 100% 496px;
+}
+
+@media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+  .contacts-wrap {
+    background-image: url(../images/contacts-bg-mob@2x.webp);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-wrap {
+    background-image: url(../images/contacts-bg-tab@1x.webp);
+
+    background-size: 100% 449px;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+    .contacts-wrap {
+      background-image: url(../images/contacts-bg-tab@2x.webp);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-wrap {
+    background-image: url(../images/contacts-bg@1x.webp);
+
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+  }
+
+  @media screen and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+    .contacts-wrap {
+      background-image: url(../images/contacts-bg@2x.webp);
+    }
+  }
 }
 
 .contacts-wrap > .container {
   display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-wrap > .container {
+    flex-direction: row;
+  }
 }
 
 /* ----------------------------booking */
 
 .booking {
-  padding-top: 130px;
-  padding-bottom: 174px;
-  padding-right: 26px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
 
-  flex-basis: calc(50% + 15px);
+@media screen and (min-width: 768px) {
+  .booking {
+    padding-top: 130px;
+    padding-bottom: 174px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .booking {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    padding-right: 26px;
+    flex-basis: calc(50% + 15px);
+  }
 }
 
 .booking-title {
   color: var(--first-title-color);
   margin-bottom: 44px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .booking-title {
+    text-align: left;
+  }
 }
 
 .booking-form {
@@ -1329,11 +1436,24 @@ address {
 
 .booking-inp-wrap {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 44px;
+  margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .booking-inp-wrap {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .booking-field {
+  width: 100%;
+}
+
+.last-bf {
   margin-bottom: 44px;
 }
 
@@ -1359,7 +1479,7 @@ address {
 }
 
 .booking-inp {
-  width: 270px;
+  width: 100%;
   height: 24px;
 
   color: var(--interact-color);
@@ -1380,32 +1500,95 @@ address {
 
 .booking-textarea {
   resize: none;
-  width: 570px;
+  width: 100%;
   height: 76px;
 }
 
+@media screen and (min-width: 768px) {
+  .booking-textarea {
+    /* width: 690px; */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .booking-textarea {
+    /* width: 570px; */
+  }
+}
+
 .booking-btn {
+  display: block;
+  margin: 0 auto;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .booking-btn {
+    display: inline-block;
+  }
 }
 /* ----------------------------------------contacts */
 
 .contacts {
-  padding-top: 130px;
-  padding-bottom: 111px;
-  padding-left: 105px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
 
-  flex-basis: calc(50% - 15px);
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-right: 81px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    padding-top: 130px;
+    padding-bottom: 111px;
+    padding-left: 105px;
+    padding-right: 0;
+
+    flex-basis: calc(50% - 15px);
+  }
 }
 
 .contacts-title {
   margin-bottom: 40px;
 
+  text-align: center;
   color: var(--first-title-color);
 }
 
+@media screen and (min-width: 768px) {
+  .contacts-title {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-wrap-details {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-wrap-details {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+}
+
 .address {
-  max-width: 270px;
-  margin-bottom: 70px;
+  margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .address {
+    margin-bottom: 0;
+  }
 }
 
 /* .address-list {
@@ -1467,9 +1650,26 @@ address {
   align-items: flex-start;
 } */
 
-.address-icon.own {
-  position: relative;
-  top: -12px;
+br {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  br {
+    display: inline;
+  }
+
+  .address-icon.own {
+    position: relative;
+    top: -12px;
+  }
+}
+
+.contacts-wrapper-info {
+}
+
+.contacts .upper-text::before {
+  background-color: rgba(157, 164, 189, 0.4);
 }
 
 .contacts-upper-text {
