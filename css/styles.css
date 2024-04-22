@@ -1715,6 +1715,12 @@ br {
   color: var(--primary-text-color);
 }
 
+@media screen and (max-width: 479px) {
+  .footer .footer-text {
+    font-size: 2.3vw;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer-text {
     align-self: flex-end;
@@ -1725,6 +1731,16 @@ br {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+@media screen and (max-width: 479px) {
+  .footer-list {
+    gap: 8.3vw;
+  }
+
+  .footer .footer-list::before {
+    width: 12.5vw;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1743,6 +1759,11 @@ br {
 
 .footer-item {
   line-height: 0;
+}
+@media screen and (max-width: 479px) {
+  .footer-item > .hero-link {
+    font-size: 2.3vw;
+  }
 }
 
 /* --------------MODAL */
